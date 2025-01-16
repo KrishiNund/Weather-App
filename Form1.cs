@@ -20,7 +20,7 @@ namespace WeatherApp
 
         private async void FetchWeatherData(string city)
         {
-            string apiKey = "3a9cdbdd6bf767f6680953a3ce49ceb4";
+            string apiKey = "api_key_from_openweatherapi";
             string apiUrl = $"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}&units=metric";
 
             using (HttpClient client = new HttpClient())
